@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -95,6 +96,9 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        <Link className="hover:underline" href="/about">
+          Go to About Page
+        </Link>
       </footer>
     </div>
   );
